@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <span class="title">Selection</span>
+    <br>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div class="input-group">
+        <div class="input-container">
+          <label for="input-color-primary">Primary color</label>
+          <input type="color" name="input-color-primary" id="input-color-primary" value="#66558e">
+        </div>
+        <div class="input-container">
+          <label for="input-color-secondary">Secondary color</label>
+          <input type="color" name="input-color-secondary" id="input-color-secondary" value="#66558e">
+        </div>
+        <div class="input-container">
+          <label for="input-color-tertiary">Tertiary color</label>
+          <input type="color" name="input-color-tertiary" id="input-color-tertiary" value="#874c61">
+        </div>
+        <div class="input-container">
+          <label for="input-color-error">Error color</label>
+          <input type="color" name="input-color-error" id="input-color-error" value="#8b4c47">
+        </div>
+        <div class="input-container">
+          <label for="input-color-neutral">Neutral color</label>
+          <input type="color" name="input-color-neutral" id="input-color-neutral">
+        </div>
+        <div class="input-container">
+          <label for="input-color-neutral-variant">Neutral variant color</label>
+          <input type="color" name="input-color-neutral-variant" id="input-color-neutral-variant">
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="component-select">Component</label>
+        <select name="component-select" id="component-select">
+          <option value="">Select an option</option>
+          <option value="0">Button</option>
+          <option value="1">Input</option>
+          <option value="2">Select</option>
+          <option value="3">Chip</option>
+          <option value="4">Navigation rail</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="type-select">Type</label>
+        <select name="type-select" id="type-select"></select>
+      </div>
+      <button class="button" type="button" id="generate-button">
+        Generate
+      </button>
+    </div>
+  </section>
+  <section>
+    <span class="title">Preview</span>
+    <div id="preview" class="preview">
+      <button class="material" data-style-type="elevated" data-icon="true">
+        <i class="icon"></i>
+        Elevated
+      </button>
+    </div>
+  </section>
+  <section>
+    <span class="title">Code</span>
+    <pre id="html-pre" class="code-section"></pre>
+    <pre id="css-pre" class="code-section"></pre>
+    <pre id="js-pre" class="code-section"></pre>
+  </section>
+  <script src="./code/button.js"></script>
+  <script src="./code/main.js"></script>
+</body>
+
+</html>
