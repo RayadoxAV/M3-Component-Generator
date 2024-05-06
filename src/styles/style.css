@@ -13,15 +13,22 @@ section {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  flex-shrink: 0;
   border: 1px solid red;
   padding: 0.25rem;
-  flex-shrink: 0;
-  width: 33%;
 
-  span.title {
+  > span.title {
     font-size: 24px;
     font-weight: 900;
   }
+}
+
+section:first-child {
+  width: 20%;
+}
+
+section:nth-child(2) {
+  width: 80%;
 }
 
 div.input-container {
@@ -70,6 +77,32 @@ div.preview {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+div.colors-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  
+  div.color-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    min-height: 5rem;
+    border: 1px solid red;
+
+    span.title {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    span.subtitle {
+      font-size: 13px;
+      font-weight: 500;
+      margin-left: auto;
+      margin-top: auto;
+    }
+  }
 }
 
 
