@@ -52,20 +52,26 @@ function getColors() {
 }
 
 function generateComponent() {
-  if (componentSelect.value === '') {
-    return;
-  }
+
   const colors = getColors();
+  console.log(colors);
 
-  switch (componentSelect.value) {
-    case '0':
-      generateButtonComponent(typeSelect.value, colors);
-      break;
+  
 
-    default:
-      console.log('Not implemented yed');
-      break;
-  }
+  // if (componentSelect.value === '') {
+  //   return;
+  // }
+  // const colors = getColors();
+
+  // switch (componentSelect.value) {
+  //   case '0':
+  //     generateButtonComponent(typeSelect.value, colors);
+  //     break;
+
+  //   default:
+  //     console.log('Not implemented yed');
+  //     break;
+  // }
 }
 
 function generateButtonComponent(type, colors) {

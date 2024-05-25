@@ -1,3 +1,28 @@
+:root {
+  
+  --color-primary: #7390d1;
+
+
+  --p-100: #FFFFFF;
+  --p-99: color-mix(in srgb, var(--color-primary), transparent 90%);
+  --p-98: red;
+  --p-95: red;
+  --p-90: red;
+  --p-80: red;
+  --p-70: red;
+  --p-60: red;
+  --p-50: var(--color-primary);
+  --p-40: red;
+  --p-35: red;
+  --p-30: red;
+  --p-25: red;
+  --p-20: red;
+  --p-15: red;
+  --p-10: red;
+  --p-5: red;
+  --p-0: #000000;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -105,6 +130,18 @@ div.colors-container {
   }
 }
 
+div.color-row {
+  margin-top: 1rem;
+  border: 1px solid red;
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.25rem;
+
+  div.color {
+    aspect-ratio: 1;
+    width: 3.5rem;
+  }
+}
 
 pre.code-section {
   max-height: 33%;
